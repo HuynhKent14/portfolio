@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KenDev</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Twinkle+Star&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,500,0,200&icon_names=play_circle"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <p class="header-title">KenDev</p>
+    </header>
+
+    <section class="introduction" id="intro">
+      <svg class="intro-svg">
+        <rect
+          class="rectangle"
+          width="250px"
+          height="250px"
+          x="200"
+          y="140"
+          stroke="#1c3b69"
+          stroke-width="7"
+          fill="transparent"
+        />
+        <rect
+          class="rectangle"
+          width="115px"
+          height="115px"
+          x="140"
+          y="310"
+          stroke="#71d1ea"
+          stroke-width="5"
+          fill="transparent"
+        />
+        <rect
+          class="rectangle"
+          width="60px"
+          height="60px"
+          x="230"
+          y="430"
+          stroke="#8ad7bb"
+          stroke-width="3"
+          fill="transparent"
+        />
+
+        <line class="nav-line" x1="875" y1="320" x2="1667" y2="320">
+          <animate
+            id="prevAnim"
+            attributeName="x2"
+            begin="indefinite"
+            dur=".3s"
+            from="860"
+            to="1667"
+          ></animate>
+          <animate
+            id="lastAnim"
+            attributeName="x1"
+            begin="indefinite"
+            dur=".6s"
+            from="860"
+            to="1667"
+            fill="freeze"
+          ></animate>
+        </line>
+      </svg>
+      <article class="intro-profile">
+        <div class="profile-img" style="z-index: 2"></div>
+      </article>
+      <article class="intro-text">
+        <nav class="navigation">
+          <ul class="nav-ul">
+            <li onclick="goTo(1)">About Me</li>
+            <li onclick="goTo(2)">What I Do</li>
+            <li onclick="goTo(3)">Projects</li>
+            <li onclick="goTo(4)">Skills</li>
+            <li onclick="goTo(5)">Testimonial</li>
+          </ul>
+        </nav>
+        <div class="intro-title">
+          <h1 class="name">Kent De Leon</h1>
+          <h2 class="subtext1">Software and Web Developer</h2>
+        </div>
+        <div class="reachout">
+          <a href="#" class="link-contact">Contact Me</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="aboutme" id="about">
+      <svg class="about-svg">
+        <rect class="rect1">
+          <animate
+            id="prevAnim2"
+            attributeName="y"
+            begin="0s"
+            dur=".4s"
+            from="430"
+            to="630"
+          ></animate>
+        </rect>
+        <rect class="rect2">
+          <animate
+            id="prevAnim2"
+            attributeName="y"
+            begin="0s"
+            dur=".4s"
+            from="300"
+            to="500"
+          ></animate>
+        </rect>
+        <rect class="rect3">
+          <animate
+            id="prevAnim2"
+            attributeName="y"
+            begin="0s"
+            dur=".4s"
+            from="480"
+            to="680"
+          ></animate>
+        </rect>
+        <rect class="rect4">
+          <animate
+            id="prevAnim2"
+            attributeName="y"
+            begin="0s"
+            dur=".4s"
+            from="330"
+            to="530"
+          ></animate>
+        </rect>
+        <rect class="rect5">
+          <animate
+            id="prevAnim2"
+            attributeName="y"
+            begin="0s"
+            dur=".4s"
+            from="220"
+            to="420"
+          ></animate>
+        </rect>
+      </svg>
+      <div class="aboutme-container">
+        <article class="aboutme-text">
+          <div class="aboutme-header">
+            About Me
+            <div class="image-container">
+              <img src="images/linkedin.png" class="linked-icon" />
+              <img src="images/facebook.png" class="facebook-icon" />
+              <img src="images/instagram.png" class="instagram-icon" />
+            </div>
+          </div>
+          <div class="aboutme-body">
+            Equipped with knowledge and skills of a four-year bachelor’s degree
+            in Information Technology, I aspire to create applications that help
+            people on their daily lives and provide innovations to the current
+            tech trend.
+          </div>
+        </article>
+        <div class="scrollcontent-container">
+          <div class="scrollcontent-indicator1" onclick="btnNext_left()"><</div>
+          <div class="scrollcontent-indicator2" onclick="btnNext_right()">
+            >
+          </div>
+        </div>
+        <article class="aboutme-content">
+          <div class="content-row1">
+            <div class="content-container1"></div>
+            <div class="content-container2"></div>
+            <div class="content-container3"></div>
+            <div class="content-container4"></div>
+            <div class="content-container5"></div>
+          </div>
+          <div class="content-row2">
+            <div class="content-container1-title">
+              Computer Programming Specialization
+            </div>
+            <div class="content-container2-title">DOST Scholar</div>
+            <div class="content-container3-title">
+              BS in Information Technology
+            </div>
+            <div class="content-container4-title">Summa Cum Laude</div>
+            <div class="content-container5-title">
+              4 Years of Developing Experience
+            </div>
+          </div>
+          <div class="indicator-container">
+            <div class="content-indicator1"></div>
+            <div class="content-indicator2"></div>
+            <div class="content-indicator3"></div>
+            <div class="content-indicator4"></div>
+            <div class="content-indicator5"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="whatido" id="ido">
+      <article class="whatido-text">
+        <img src="images/key1.png" class="key1" onclick="animateKey1()" />
+        <img src="images/key2.png" class="key2" onclick="animateKey1()" />
+        <div class="whatido-header">What I Do?</div>
+        <div class="whatido-body"></div>
+      </article>
+      <article class="whatido-content">
+        <ul class="content-menu">
+          <li class="list-header">View Category</li>
+          <ul>
+            <li class="desc-header">
+              <i class="fa fa-info-circle">
+                select to view mock demonstration</i
+              >
+            </li>
+          </ul>
+          <li class="menu-divider" onclick="load_Category(1)" id="menu">
+            Web Development
+            <span class="material-symbols-outlined"> play_circle </span>
+            <ul>
+              <li class="desc">Full Stack | Front-end | Back-end</li>
+            </ul>
+          </li>
+          <li class="menu-divider">
+            User Interface Design
+            <span class="material-symbols-outlined"> play_circle </span>
+            <ul>
+              <li class="desc">User Interface | User Experience</li>
+            </ul>
+          </li>
+          <li class="menu-divider">
+            Software Development
+            <span class="material-symbols-outlined"> play_circle </span>
+            <ul>
+              <li class="desc">Software Application</li>
+            </ul>
+          </li>
+          <li class="menu-divider">
+            Mobile Software Development
+            <span class="material-symbols-outlined"> play_circle </span>
+            <ul>
+              <li class="desc">Android Application</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="project" id="project">
+      <article class="project-header">My Works</article>
+      <article class="project-body">
+        <div class="project-row1">
+          <div
+            class="project-preview1"
+            onmouseover="seemore(1)"
+            onmouseout="hide(1)"
+          >
+            <div class="project-thumbnail1" onclick="seemoreClick1()"></div>
+            <p class="btn-seemore1" onclick="seemoreClick1()">See More</p>
+            <div class="project-text">
+              <div class="project-title">● J's Photography</div>
+              <div class="project-content">
+                J's Photography is a photography and video service based in San
+                Fernando, Pampanga. We captures life's most meaningful moments
+                through high quality photos and cinematic videos. With passion
+                and creativity, we unfolds your story and produces exceptional
+                works that turns your big and small...
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-preview2"
+            onmouseover="seemore(2)"
+            onmouseout="hide(2)"
+          >
+            <div class="project-thumbnail2" onclick="seemoreClick2()"></div>
+            <p class="btn-seemore2" onclick="seemoreClick2()">See More</p>
+            <div class="project-text">
+              <div class="project-title">● Lorem</div>
+              <div class="project-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                recusandae debitis quis, libero accusamus laborum nobis placeat
+                sint eius ipsum, iure molestias! Commodi labore ullam at illum
+                distinctio, blanditiis sint.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-row2">
+          <div
+            class="project-preview3"
+            onmouseover="seemore(3)"
+            onmouseout="hide(3)"
+          >
+            <div class="project-thumbnail3" onclick="seemoreClick3()"></div>
+            <p class="btn-seemore3" onclick="seemoreClick3()">See More</p>
+            <div class="project-text">
+              <div class="project-title">● Lorem</div>
+              <div class="project-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                recusandae debitis quis, libero accusamus laborum nobis placeat
+                sint eius ipsum, iure molestias! Commodi labore ullam at illum
+                distinctio, blanditiis sint.
+              </div>
+            </div>
+          </div>
+          <div
+            class="project-preview4"
+            onmouseover="seemore(4)"
+            onmouseout="hide(4)"
+          >
+            <div class="project-thumbnail4" onclick="seemoreClick4()"></div>
+            <p class="btn-seemore4" onclick="seemoreClick4()">See More</p>
+            <div class="project-text">
+              <div class="project-title">● Lorem</div>
+              <div class="project-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                recusandae debitis quis, libero accusamus laborum nobis placeat
+                sint eius ipsum, iure molestias! Commodi labore ullam at illum
+                distinctio, blanditiis sint.
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!--pop-->
+      <article class="pop-details">
+        <div class="details-title">
+          Details <span class="details-close" onclick="hide_details()">×</span>
+        </div>
+        <div class="details-about">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          ut quisquam tempora delectus, nihil error minus natus iure provident
+          dolores exercitationem aliquam necessitatibus tempore neque at
+          accusantium impedit quia temporibus.
+        </div>
+        <div class="details-create-title">Created Using</div>
+        <div class="details-create-icon">
+          <div class="icon-container"><img src="images/htmllogo.png" /></div>
+          <div class="icon-container"><img src="images/csslogo.png" /></div>
+          <div class="icon-container"><img src="images/jslogo.png" /></div>
+        </div>
+        <div class="visit-page">
+          <p class="txtvisit-page">Visit Page</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="skills" id="skills">
+      <article class="skills-text">
+        <div class="skills-header">My Expertise</div>
+        <div class="skills-category">
+          <select name="category" id="category" onchange="changeCategory()">
+            <option value="Full Stack Development">
+              Full Stack Development
+            </option>
+            <option value="UI | UX Design">UI | UX Design</option>
+            <option value="Software Development">Software Development</option>
+            <option value="Mobile Software Development">
+              Mobile Software Development
+            </option>
+          </select>
+        </div>
+        <div class="skills-description">
+          As a Full Stack Developer, I build seamless, end-to-end web
+          applications—handling everything from responsive front-end interfaces
+          to efficient, secure back-end systems. I work with modern frameworks
+          and technologies like React, Node.js, and Express, and I’m comfortable
+          managing databases, APIs, and deployment processes. I enjoy crafting
+          solutions that are not only functional but also scalable and
+          user-friendly.
+        </div>
+      </article>
+      <article class="skills-content">
+        <div class="skills-search">
+          <input
+            type="text"
+            class="txtsearch-skills"
+            placeholder="Search for Expertise"
+          />
+          <input type="button" class="btnsearch-skill" />
+        </div>
+        <div class="skills-box">
+          <div class="skill-row1">
+            <div class="skill1"></div>
+            <div class="skill2"></div>
+            <div class="skill3"></div>
+          </div>
+          <div class="skill-row2">
+            <div class="skill4"></div>
+            <div class="skill5"></div>
+            <div class="skill6"></div>
+          </div>
+        </div>
+        <div class="skills-scroll-indicator">
+          <div class="scroll-ind1"></div>
+          <div class="scroll-ind2"></div>
+          <div class="scroll-ind3"></div>
+        </div>
+      </article>
+      <article class="skills-scroll"><img src="/images/arrow.png" /></article>
+    </section>
+
+    <section class="testimonial">
+      <article class="testimonial-header">
+        <div class="header-text">
+          <h1>Client Testimonials</h1>
+          <h5>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+            aspernatur beatae facere maxime! Natus corporis inventore ea
+            pariatur quidem ex tempore velit ullam. Asperiores, unde?
+            Exercitationem est placeat quibusdam illum.
+          </h5>
+        </div>
+        <span class="magnifying"></span>
+        <div class="header-design">
+          <div class="row"><div class="design-pfp"></div></div>
+          <div class="row">⭐</div>
+          <div class="row">⭐</div>
+          <div class="row">⭐</div>
+          <div class="row">⭐</div>
+          <div class="row">⭐</div>
+        </div>
+      </article>
+      <article class="testimonial-body">
+        <div class="feedback">
+          <div class="feedback-header">
+            <div class="pfp-container">
+              <span class="feedback-pfp"></span>
+            </div>
+            <div class="feedback-header-info">
+              <h1 class="feedback-quote">"Sensational"</h1>
+              <span>
+                <h4 class="feedback-owner">Kent de Leon</h4>
+                <h6 class="feedback-owner-position">CEO of FineTech Inc.</h6>
+              </span>
+              <h6 class="feedback-owner-rate">⭐ ⭐ ⭐ ⭐ ⭐</h6>
+            </div>
+          </div>
+          <div class="feedback-body"></div>
+        </div>
+        <div class="feedback">
+          <div class="feedback-header">
+            <div class="pfp-container">
+              <span class="feedback-pfp"></span>
+            </div>
+            <div class="feedback-header-info">
+              <h1 class="feedback-quote">"Responsive"</h1>
+              <span>
+                <h4 class="feedback-owner">Aliza Keishemer de Leon</h4>
+                <h6 class="feedback-owner-position">CEO of FineTech Inc.</h6>
+              </span>
+              <h6 class="feedback-owner-rate">⭐ ⭐ ⭐ ⭐ ⭐</h6>
+            </div>
+          </div>
+          <div class="feedback-body"></div>
+        </div>
+      </article>
+    </section>
+
+    <div class="scroll-container">
+      <div class="scroll-dot1" onclick="goTo(0)"></div>
+      <div class="scroll-dot2" onclick="goTo(1)"></div>
+      <div class="scroll-dot3" onclick="goTo(2)"></div>
+      <div class="scroll-dot4" onclick="goTo(3)"></div>
+      <div class="scroll-dot5" onclick="goTo(4)"></div>
+      <div class="scroll-dot6" onclick="goTo(5)"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
