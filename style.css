@@ -599,7 +599,7 @@ rect {
   right: 20px;
   width: 15px;
   height: 15px;
-  background-image: url("/images/btnoff.png");
+  background-image: url("images/btnoff.png");
   background-size: contain;
   background-color: transparent;
   border: transparent;
@@ -1014,7 +1014,7 @@ select:focus {
   border-left: transparent;
   background-color: rgb(26, 96, 126);
   border-radius: 0 30px 30px 0;
-  background-image: url(/images/search.png);
+  background-image: url(images/search.png);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: 40%;
@@ -1143,7 +1143,7 @@ select:focus {
   position: absolute;
   height: 100%;
   width: 380px;
-  background-image: url("/images/magnifying.png");
+  background-image: url("images/magnifying.png");
   background-size: contain;
   background-repeat: no-repeat;
   right: 0px;
@@ -1217,7 +1217,7 @@ select:focus {
   height: 170px;
   border-radius: 100%;
   background-color: rgb(255, 255, 255);
-  background-image: url("/images/user.png");
+  background-image: url("images/user.png");
   background-size: cover;
   scale: 1.1;
 }
