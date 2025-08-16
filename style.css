@@ -61,11 +61,19 @@ body {
 }
 
 .header-title {
+  display: flex;
+  align-items: center;
   font-style: italic;
   font-weight: 650;
   font-size: 35px;
   margin: 0px;
   padding-left: 60px;
+  color: rgb(7, 56, 115);
+}
+
+.header-title img {
+  height: 35px;
+  margin-right: 20px;
 }
 
 .introduction {
@@ -75,10 +83,6 @@ body {
   justify-content: center;
   width: 100%;
   height: calc(100vh - 70px);
-  background-image: url(images/introbg.png);
-  background-size: 1300px 100%;
-  background-repeat: no-repeat;
-  background-position: right;
   animation: animopacity 1s ease;
   animation-timeline: view();
   animation-range: entry -90% cover 100%;
@@ -111,7 +115,7 @@ rect {
   height: 400px;
   background-image: url("images/profile.png");
   background-size: cover;
-  border: 20px solid rgb(6, 6, 65);
+  border: 15px solid rgb(4, 4, 33);
   border-radius: 100%;
   transition: 1s ease;
 }
@@ -125,9 +129,15 @@ rect {
   height: 100%;
 }
 
+.navigation {
+  position: absolute;
+  top: 25%;
+}
 .nav-ul {
+  position: relative;
+  top: -50px;
+  padding-left: 30px;
   list-style-type: none;
-  overflow: hidden;
 }
 
 .nav-ul li {
@@ -138,6 +148,7 @@ rect {
   border-radius: 10px;
   font-size: 25px;
   cursor: pointer;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.027);
 }
 
 .nav-ul li::before {
@@ -166,20 +177,26 @@ rect {
   cursor: pointer;
   transition: 1s ease;
 }
+.greet {
+  margin: 0;
+  font-weight: 500;
+  color: rgb(7, 56, 115);
+}
 
 .name {
+  display: flex;
+  align-items: center;
   color: rgb(7, 56, 115);
   font-size: 80px;
-  margin-bottom: 0;
-  margin-top: 20px;
+  margin: 0;
   font-style: italic;
-  height: 100px;
+  height: 80px;
 }
 
 .subtext1 {
   color: rgb(75, 67, 67);
   margin-top: 0;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   font-style: italic;
 }
